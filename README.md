@@ -14,3 +14,11 @@ docker build -t openwrt_builder .
 mkdir ~/build
 docker run -v ~/build:/home/user:z -it openwrt_builder /bin/bash
 ```
+
+Детальный лог в случае ошибки:
+
+```bash
+make package/boot/uboot-rockchip/compile V=s 
+```
+
+Где `package/boot/uboot-rockchip` пакет на котором сборка завершилась ошибкой.
