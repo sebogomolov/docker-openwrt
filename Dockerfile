@@ -1,6 +1,6 @@
 FROM debian:buster
 
-RUN apt-get update &&\
+RUN apt-get update && \
     apt-get install -y \
         sudo time git-core subversion build-essential g++ bash make \
         libssl-dev patch libncurses5 libncurses5-dev zlib1g-dev gawk \
